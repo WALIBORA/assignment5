@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form and Content - Bytecode School</title>
+  <meta name="description" content="Bytecode School website demo with lists, tables, media, and a structured HTML5 form.">
+</head>
+<body>
+  <header>
+    <h1>Bytecode School</h1>
+    <p>Welcome to our school portal — showcasing lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <main>
+    <!-- Section: School Facilities (List) -->
+    <section>
+      <h2>Our Facilities</h2>
+      <p>We provide a variety of facilities to enhance learning and student life:</p>
+      <ul>
+        <li>Modern computer and coding labs</li>
+        <li>Fully equipped science laboratories</li>
+        <li>Digital library and e-resources</li>
+        <li>Innovation hub and robotics lab</li>
+        <li>Sports complex with indoor and outdoor facilities</li>
+      </ul>
+    </section>
+
+    <!-- Section: Timetable (Table) -->
+    <section>
+      <h2>Sample Weekly Timetable</h2>
+      <table border="1" summary="Weekly timetable for Grade 7 students">
+        <caption>Grade 7 Class Timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">08:00 - 10:00</th>
+            <th scope="col">10:15 - 12:15</th>
+            <th scope="col">01:00 - 03:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Science</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>History</td>
+            <td>Mathematics</td>
+            <td>Computer Studies</td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>Science</td>
+            <td>Programming</td>
+            <td>Geography</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>School Life</h2>
+      <p>Here’s a glimpse of our campus and student activities:</p>
+      <figure>
+        <img src="bytecode-school-building.jpg" alt="Bytecode School main building" width="400">
+        <figcaption>Main school building at Bytecode School.</figcaption>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="bytecode-anthem.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Bytecode School Anthem</figcaption>
+      </figure>
+      <figure>
+        <video width="400" controls>
+          <source src="bytecode-activities.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Highlights of student activities</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>Student Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required minlength="2" placeholder="Enter first name"><br><br>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required minlength="2" placeholder="Enter last name"><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com" autocomplete="email"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+          <label for="address">Home Address:</label><br>
+          <textarea id="address" name="address" rows="3" cols="40" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Information</legend>
+
+          <label for="grade">Applying for Grade:</label>
+          <input type="number" id="grade" name="grade" min="1" max="12" required><br><br>
+
+          <label>Subjects of Interest:</label><br>
+          <input type="checkbox" id="math" name="subjects" value="math">
+          <label for="math">Mathematics</label><br>
+          <input type="checkbox" id="science" name="subjects" value="science">
+          <label for="science">Science</label><br>
+          <input type="checkbox" id="programming" name="subjects" value="programming">
+          <label for="programming">Programming</label><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Setup</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5" autocomplete="username"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password"><br><br>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6"><br><br>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the terms and conditions.</label>
+        </p>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bytecode School. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
