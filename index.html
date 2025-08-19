@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample semantic HTML5 webpage with accessibility and SEO best practices.">
+    <meta name="keywords" content="HTML5, semantic, accessibility, SEO, webpage">
+    <meta name="author" content="Your Name">
+    <title>welcome to my website</title>
+</head>
+<body>
+    <!-- Header landmark -->
+    <header>
+        <h1>welcome To My home page</h1>
+        <p>We are Dedicated on Making sure you get the best</p>
+    </header>
+
+    <!-- Navigation landmark -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main landmark -->
+    <main id="home">
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Us</h2>
+            <p>How can You be easily accessed on the web we do that by making our Wesite uses the SEO</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <article aria-labelledby="web-design-heading">
+                <h3 id="web-design-heading">Web Design</h3>
+                <p>We create visually appealing and user-friendly designs that adapt seamlessly to different devices.</p>
+            </article>
+
+            <article aria-labelledby="seo-heading">
+                <h3 id="seo-heading">SEO Optimization</h3>
+                <p>Our strategies ensure your site ranks well in search engines with clear structure and optimized content.</p>
+            </article>
+
+            <article aria-labelledby="accessibility-heading">
+                <h3 id="accessibility-heading">Accessibility Audits</h3>
+                <p>We review and improve websites to ensure compliance with accessibility standards, making them usable for everyone.</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <address>
+                <p>Email: <a href="mailto:gideonmusikoma">gideonmusikoma@gmail.com</a></p>
+                <p>Phone: <a href="tel:0712649492">0712649492</a></p>
+                <p>Location: 1067, thika</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ByteCode. All rights reserved.</p>
+    </footer>
+</body>
+</html>
