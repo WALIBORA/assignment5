@@ -1,55 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bisoft School</title>
+  <title>Bitsoft School</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Bisoft School</h1>
-    <p>Learning JavaScript the fun way!</p>
+    <h1>Welcome to Bitsoft School</h1>
+    <button id="modeToggle">🌙 Dark Mode</button>
   </header>
 
+  <!-- Navigation Tabs -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="home">Home</button>
+    <button class="tab-btn" data-tab="about">About</button>
+    <button class="tab-btn" data-tab="contact">Contact</button>
+  </nav>
+
   <main>
-    <!-- Part 1: User Input -->
-    <section>
-      <h2>Student Registration</h2>
-      <label for="studentName">Enter your name: </label>
-      <input type="text" id="studentName">
-      <button id="registerBtn">Register</button>
-      <p id="greeting"></p>
+    <!-- Tab Content -->
+    <section id="home" class="tab-content active">
+      <h2>Home</h2>
+      <p>Learn coding, technology, and innovation at Bitsoft School!</p>
     </section>
 
-    <!-- Part 2: Functions -->
-    <section>
-      <h2>Score Calculator</h2>
-      <label for="marks">Enter your marks (0–100): </label>
-      <input type="number" id="marks">
-      <button id="calcBtn">Check Grade</button>
-      <p id="gradeOutput"></p>
+    <section id="about" class="tab-content">
+      <h2>About</h2>
+      <p>We are dedicated to teaching students modern programming skills.</p>
     </section>
 
-    <!-- Part 3: Loops -->
-    <section>
-      <h2>Class List</h2>
-      <button id="showStudentsBtn">Show Student Names</button>
-      <ul id="studentList"></ul>
-    </section>
+    <section id="contact" class="tab-content">
+      <h2>Contact Us</h2>
+      <form id="signupForm">
+        <label>Name: <input type="text" id="name"></label>
+        <small class="error" id="nameError"></small>
 
-    <!-- Part 4: DOM -->
-    <section>
-      <h2>change mode</h2>
-      <button id="toggleThemeBtn">Toggle Dark Mode</button>
-      <p id="themeMessage">Click the button to change theme.</p>
+        <label>Email: <input type="text" id="email"></label>
+        <small class="error" id="emailError"></small>
+
+        <label>Password: <input type="password" id="password"></label>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formSuccess"></p>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Bisoft School</p>
-  </footer>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What courses do you offer?</button>
+      <div class="faq-answer">We offer Web Development, Python, JavaScript, and more.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Is Bitsoft School online?</button>
+      <div class="faq-answer">Yes, we provide online and physical classes.</div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
