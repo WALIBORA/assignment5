@@ -1,69 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paradise Hotel</title>
+  <title>Bisoft School</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <h1>Paradise Hotel</h1>
-    <p>Your comfort, our priority</p>
+  <header>
+    <h1>Welcome to Bisoft School</h1>
+    <p>Learning JavaScript the fun way!</p>
   </header>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#rooms">Rooms</a></li>
-      <li><a href="#dining">Dining</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Layout with Grid -->
-  <main class="grid-layout">
-    <!-- Content Area -->
-    <section class="content">
-      <h2 id="rooms">Our Rooms</h2>
-      <div class="room-cards">
-        <div class="card">
-          <img src="https://www.pexels.com/photo/colorful-fruit-arrangement-with-scented-candle-33576385/" alt="Room 1">
-          <h3>Deluxe Room</h3>
-          <p>Enjoy a cozy stay with all modern amenities.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="Room 2">
-          <h3>Executive Suite</h3>
-          <p>Spacious suite with breathtaking views.</p>
-        </div> 
-        <div class="card">
-          <img src="" alt="Room 3">
-          <h3>Family Room</h3>
-          <p>Perfect for a comfortable family vacation.</p>
-        </div>
-      </div>
-
-      <h2 id="dining">Dining Experience</h2>
-      <p>Our restaurant offers local and international cuisine prepared by world-class chefs.</p>
+  <main>
+    <!-- Part 1: User Input -->
+    <section>
+      <h2>Student Registration</h2>
+      <label for="studentName">Enter your name: </label>
+      <input type="text" id="studentName">
+      <button id="registerBtn">Register</button>
+      <p id="greeting"></p>
     </section>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2>Special Offers</h2>
-      <ul>
-        <li>20% off for early bookings</li>
-        <li>Free spa session for suite guests</li>
-        <li>Weekend getaway packages</li>
-      </ul>
-    </aside>
+    <!-- Part 2: Functions -->
+    <section>
+      <h2>Score Calculator</h2>
+      <label for="marks">Enter your marks (0–100): </label>
+      <input type="number" id="marks">
+      <button id="calcBtn">Check Grade</button>
+      <p id="gradeOutput"></p>
+    </section>
+
+    <!-- Part 3: Loops -->
+    <section>
+      <h2>Class List</h2>
+      <button id="showStudentsBtn">Show Student Names</button>
+      <ul id="studentList"></ul>
+    </section>
+
+    <!-- Part 4: DOM -->
+    <section>
+      <h2>change mode</h2>
+      <button id="toggleThemeBtn">Toggle Dark Mode</button>
+      <p id="themeMessage">Click the button to change theme.</p>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <p>&copy; 2025 Paradise Hotel | Contact us: info@paradisehotel.com</p>
+  <footer>
+    <p>© 2025 Bisoft School</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
