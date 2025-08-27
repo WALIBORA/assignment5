@@ -1,35 +1,19 @@
-// =======================
-// Event Handling Examples
-// =======================
-
-// Toggle Dark/Light Mode
 document.getElementById("modeToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   const btn = document.getElementById("modeToggle");
-  btn.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+  btn.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
 });
-
-// =======================
-// Tabs Navigation
-// =======================
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabContents = document.querySelectorAll(".tab-content");
 
 tabButtons.forEach(btn => {
   btn.addEventListener("click", () => {
-    // Remove active from all
     tabButtons.forEach(b => b.classList.remove("active"));
-    tabContents.forEach(c => c.classList.remove("active"));
-
-    // Add active to clicked
+    tabContents.forEach(c => c.classList.remove("active")); 
     btn.classList.add("active");
     document.getElementById(btn.dataset.tab).classList.add("active");
   });
 });
-
-// =======================
-// FAQ Toggle
-// =======================
 const faqQuestions = document.querySelectorAll(".faq-question");
 
 faqQuestions.forEach(q => {
@@ -39,15 +23,11 @@ faqQuestions.forEach(q => {
   });
 });
 
-// =======================
-// Form Validation
-// =======================
 document.getElementById("signupForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // Stop form from submitting
+  e.preventDefault();
 
   let valid = true;
 
-  // Name Validation
   const name = document.getElementById("name").value.trim();
   if (name.length < 3) {
     document.getElementById("nameError").textContent = "Name must be at least 3 characters.";
@@ -56,7 +36,6 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
     document.getElementById("nameError").textContent = "";
   }
 
-  // Email Validation (Regex)
   const email = document.getElementById("email").value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
@@ -77,7 +56,7 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
 
   // Final Success Message
   if (valid) {
-    document.getElementById("formSuccess").textContent = "Form submitted successfully ✅";
+    document.getElementById("formSuccess").textContent = "Form submitted successfully ";
     this.reset();
   } else {
     document.getElementById("formSuccess").textContent = "";
