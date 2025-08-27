@@ -2,53 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>welcome to BitSoft Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradise Hotel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Paradise Hotel</h1>
+    <p>Your comfort, our priority</p>
+  </header>
 
   <!-- Navigation -->
   <nav class="navbar">
-    <h1 class="logo">Bitsoft</h1>
-    <ul class="nav-links">
+    <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#dining">Dining</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h2>Do You Have Any problems we got you covered</h2>
-    <p>we solve all your problems .</p>
-    <button class="btn">Learn More</button>
-  </header>
+  <!-- Main Layout with Grid -->
+  <main class="grid-layout">
+    <!-- Content Area -->
+    <section class="content">
+      <h2 id="rooms">Our Rooms</h2>
+      <div class="room-cards">
+        <div class="card">
+          <img src="https://www.pexels.com/photo/colorful-fruit-arrangement-with-scented-candle-33576385/" alt="Room 1">
+          <h3>Deluxe Room</h3>
+          <p>Enjoy a cozy stay with all modern amenities.</p>
+        </div>
+        <div class="card">
+          <img src="" alt="Room 2">
+          <h3>Executive Suite</h3>
+          <p>Spacious suite with breathtaking views.</p>
+        </div> 
+        <div class="card">
+          <img src="" alt="Room 3">
+          <h3>Family Room</h3>
+          <p>Perfect for a comfortable family vacation.</p>
+        </div>
+      </div>
 
-  <!-- Content Section -->
-  <section class="container">
-    <article class="card">
-      <h3>we Develop your Careers </h3>
-      <p> We are ready to  <strong>support young men with IT Vision</strong>. 
-      to move to other levels.</p>
-    </article>
+      <h2 id="dining">Dining Experience</h2>
+      <p>Our restaurant offers local and international cuisine prepared by world-class chefs.</p>
+    </section>
 
-    <article class="card">
-      <h3>web development</h3>
-      <p>some skills that you must have are <em>HTML, Css</em> and <code>javascript</code>, 
-      <code>padding</code>, and <code>border</code> to adjust element spacing.</p>
-    </article>
-
-    <article class="card">
-      <h3>Practice</h3>
-      <p>practice makes it perfect 
-      </p>
-    </article>
-  </section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Special Offers</h2>
+      <ul>
+        <li>20% off for early bookings</li>
+        <li>Free spa session for suite guests</li>
+        <li>Weekend getaway packages</li>
+      </ul>
+    </aside>
+  </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 all Rights are reserved</p>
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 Paradise Hotel | Contact us: info@paradisehotel.com</p>
   </footer>
-
 </body>
 </html>
